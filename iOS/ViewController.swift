@@ -39,6 +39,11 @@ class ViewController: UIViewController {
     webServer = GCDWebUploader(uploadDirectory: documentsPath)
     webServer.delegate = self
     webServer.allowHiddenItems = true
+//    webServer.allowedFileExtensions = []
+    webServer.title = "title" // default: CFBundleDisplayName or CFBundleName
+    webServer.header = "header" // default: CFBundleDisplayName or CFBundleName
+    webServer.prologue = "prologue" // "<p>Drag &amp; drop files on this window or use the \"Import Files&hellip;\" button to import new files.</p>"
+    webServer.footer = "footer" // "%@ %@" default: CFBundleDisplayName or CFBundleName and CFBundleShortVersionString
     if webServer.start() {
       label?.text = "GCDWebServer running locally on port \(webServer.port)"
     } else {

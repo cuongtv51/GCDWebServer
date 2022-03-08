@@ -420,15 +420,15 @@ NS_ASSUME_NONNULL_END
 }
 
 - (BOOL)shouldMoveItemFromPath:(NSString*)fromPath toPath:(NSString*)toPath {
-  return YES;
+  return NO;
 }
 
 - (BOOL)shouldDeleteItemAtPath:(NSString*)path {
-  return YES;
+  return NO;
 }
 
 - (BOOL)shouldCreateDirectoryAtPath:(NSString*)path {
-  return YES;
+  return NO;
 }
 
 @end
