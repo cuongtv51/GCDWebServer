@@ -25,7 +25,7 @@
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "GCDWebServer.h"
+#import "GCDWebServer2.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -76,7 +76,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @warning For GCDWebUploader to work, "GCDWebUploader.bundle" must be added
  *  to the resources of the Xcode target.
  */
-@interface GCDWebUploader : GCDWebServer
+@interface GCDWebUploader : GCDWebServer2
 
 /**
  *  Returns the upload directory as specified when the uploader was initialized.

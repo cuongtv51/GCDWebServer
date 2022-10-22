@@ -356,7 +356,7 @@ NS_ASSUME_NONNULL_END
       }];
 }
 
-- (instancetype)initWithServer:(GCDWebServer*)server localAddress:(NSData*)localAddress remoteAddress:(NSData*)remoteAddress socket:(CFSocketNativeHandle)socket {
+- (instancetype)initWithServer:(GCDWebServer2*)server localAddress:(NSData*)localAddress remoteAddress:(NSData*)remoteAddress socket:(CFSocketNativeHandle)socket {
   if ((self = [super init])) {
     _server = server;
     _localAddressData = localAddress;

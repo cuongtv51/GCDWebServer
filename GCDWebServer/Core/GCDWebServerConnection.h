@@ -25,7 +25,7 @@
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "GCDWebServer.h"
+#import "GCDWebServer2.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -48,7 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  Returns the GCDWebServer that owns the connection.
  */
-@property(nonatomic, readonly) GCDWebServer* server;
+@property(nonatomic, readonly) GCDWebServer2* server;
 
 /**
  *  Returns YES if the connection is using IPv6.

@@ -35,7 +35,7 @@
 #import "GCDWebServerHTTPStatusCodes.h"
 #import "GCDWebServerFunctions.h"
 
-#import "GCDWebServer.h"
+#import "GCDWebServer2.h"
 #import "GCDWebServerConnection.h"
 
 #import "GCDWebServerDataRequest.h"
@@ -181,10 +181,10 @@ extern NSString* GCDWebServerComputeMD5Digest(NSString* format, ...) NS_FORMAT_F
 extern NSString* GCDWebServerStringFromSockAddr(const struct sockaddr* addr, BOOL includeService);
 
 @interface GCDWebServerConnection ()
-- (instancetype)initWithServer:(GCDWebServer*)server localAddress:(NSData*)localAddress remoteAddress:(NSData*)remoteAddress socket:(CFSocketNativeHandle)socket;
+- (instancetype)initWithServer:(GCDWebServer2*)server localAddress:(NSData*)localAddress remoteAddress:(NSData*)remoteAddress socket:(CFSocketNativeHandle)socket;
 @end
 
-@interface GCDWebServer ()
+@interface GCDWebServer2 ()
 @property(nonatomic, readonly) NSMutableArray<GCDWebServerHandler*>* handlers;
 @property(nonatomic, readonly, nullable) NSString* serverName;
 @property(nonatomic, readonly, nullable) NSString* authenticationRealm;

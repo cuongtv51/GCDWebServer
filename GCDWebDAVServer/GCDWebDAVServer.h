@@ -25,7 +25,7 @@
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "GCDWebServer.h"
+#import "GCDWebServer2.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -78,7 +78,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  See the README.md file for more information about the features of GCDWebDAVServer.
  */
-@interface GCDWebDAVServer : GCDWebServer
+@interface GCDWebDAVServer : GCDWebServer2
 
 /**
  *  Returns the upload directory as specified when the server was initialized.

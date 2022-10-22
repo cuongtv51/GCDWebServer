@@ -232,7 +232,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_Basic;
  */
 extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
 
-@class GCDWebServer;
+@class GCDWebServer2;
 
 /**
  *  Delegate methods for GCDWebServer.
@@ -245,7 +245,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
 /**
  *  This method is called after the server has successfully started.
  */
-- (void)webServerDidStart:(GCDWebServer*)server;
+- (void)webServerDidStart:(GCDWebServer2*)server;
 
 /**
  *  This method is called after the Bonjour registration for the server has
@@ -254,7 +254,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
  *  Use the "bonjourServerURL" property to retrieve the Bonjour address of the
  *  server.
  */
-- (void)webServerDidCompleteBonjourRegistration:(GCDWebServer*)server;
+- (void)webServerDidCompleteBonjourRegistration:(GCDWebServer2*)server;
 
 /**
  *  This method is called after the NAT port mapping for the server has been
@@ -263,7 +263,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
  *  Use the "publicServerURL" property to retrieve the public address of the
  *  server.
  */
-- (void)webServerDidUpdateNATPortMapping:(GCDWebServer*)server;
+- (void)webServerDidUpdateNATPortMapping:(GCDWebServer2*)server;
 
 /**
  *  This method is called when the first GCDWebServerConnection is opened by the
@@ -274,7 +274,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
  *  until before the last HTTP request has been responded to (and the
  *  corresponding last GCDWebServerConnection closed).
  */
-- (void)webServerDidConnect:(GCDWebServer*)server;
+- (void)webServerDidConnect:(GCDWebServer2*)server;
 
 /**
  *  This method is called when the last GCDWebServerConnection is closed after
@@ -286,12 +286,12 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
  *  requests). This effectively coalesces the calls to -webServerDidConnect:
  *  and -webServerDidDisconnect:.
  */
-- (void)webServerDidDisconnect:(GCDWebServer*)server;
+- (void)webServerDidDisconnect:(GCDWebServer2*)server;
 
 /**
  *  This method is called after the server has stopped.
  */
-- (void)webServerDidStop:(GCDWebServer*)server;
+- (void)webServerDidStop:(GCDWebServer2*)server;
 
 @end
 
@@ -306,7 +306,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
  *
  *  See the README.md file for more information about the architecture of GCDWebServer.
  */
-@interface GCDWebServer : NSObject
+@interface GCDWebServer2 : NSObject
 
 /**
  *  Sets the delegate for the server.
@@ -392,7 +392,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
 
 @end
 
-@interface GCDWebServer (Extensions)
+@interface GCDWebServer2 (Extensions)
 
 /**
  *  Returns the server's URL.
@@ -464,7 +464,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
 
 @end
 
-@interface GCDWebServer (Handlers)
+@interface GCDWebServer2 (Handlers)
 
 /**
  *  Adds a default handler to the server to handle all incoming HTTP requests
@@ -508,7 +508,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
 
 @end
 
-@interface GCDWebServer (GETHandlers)
+@interface GCDWebServer2 (GETHandlers)
 
 /**
  *  Adds a handler to the server to respond to incoming "GET" HTTP requests
@@ -570,7 +570,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
  *  used by GCDWebServer. They can be used for consistency wherever you interact
  *  with GCDWebServer in your code (e.g. in the implementation of handlers).
  */
-@interface GCDWebServer (Logging)
+@interface GCDWebServer2 (Logging)
 
 /**
  *  Sets the log level of the logging facility below which log messages are discarded.
@@ -619,7 +619,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
 
 #ifdef __GCDWEBSERVER_ENABLE_TESTING__
 
-@interface GCDWebServer (Testing)
+@interface GCDWebServer2 (Testing)
 
 /**
  *  Activates recording of HTTP requests and responses which create files in the
