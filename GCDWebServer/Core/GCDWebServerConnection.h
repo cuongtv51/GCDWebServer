@@ -25,7 +25,7 @@
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "GCDWebServer2.h"
+#import <GCDWebServers/GCDWebServer2.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
