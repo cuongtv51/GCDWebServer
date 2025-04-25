@@ -40,6 +40,7 @@
 #import <ifaddrs.h>
 #import <net/if.h>
 #import <netdb.h>
+#import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 
 #import "GCDWebServerPrivate.h"
 
@@ -48,7 +49,7 @@ static NSDateFormatter* _dateFormatterISO8601 = nil;
 static dispatch_queue_t _dateFormatterQueue = NULL;
 
 // TODO: Handle RFC 850 and ANSI C's asctime() format
-void GCDWebServerInitializeFunctions() {
+void GCDWebServerInitializeFunctions(void) {
   GWS_DCHECK([NSThread isMainThread]);  // NSDateFormatter should be initialized on main thread
   if (_dateFormatterRFC822 == nil) {
     _dateFormatterRFC822 = [[NSDateFormatter alloc] init];
@@ -176,10 +177,9 @@ NSString* GCDWebServerGetMimeTypeForExtension(NSString* extension, NSDictionary<
       mimeType = [builtInOverrides objectForKey:extension];
     }
     if (mimeType == nil) {
-      CFStringRef uti = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (__bridge CFStringRef)extension, NULL);
+      UTType *uti = [UTType typeWithFilenameExtension:extension];
       if (uti) {
-        mimeType = CFBridgingRelease(UTTypeCopyPreferredTagWithClass(uti, kUTTagClassMIMEType));
-        CFRelease(uti);
+          mimeType = uti.preferredMIMEType;
       }
     }
   }

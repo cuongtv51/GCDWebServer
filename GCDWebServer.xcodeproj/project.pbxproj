@@ -26,6 +26,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		CAA908FB2DBBF39B004BD1A3 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA908FA2DBBF39B004BD1A3 /* UniformTypeIdentifiers.framework */; };
+		CAA908FD2DBBF3A1004BD1A3 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA908FC2DBBF3A1004BD1A3 /* UniformTypeIdentifiers.framework */; };
+		CAA908FE2DBBF3A6004BD1A3 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA908FC2DBBF3A1004BD1A3 /* UniformTypeIdentifiers.framework */; };
+		CAA908FF2DBBF3C3004BD1A3 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA908FA2DBBF39B004BD1A3 /* UniformTypeIdentifiers.framework */; };
+		CAA909012DBBF3C8004BD1A3 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA909002DBBF3C8004BD1A3 /* UniformTypeIdentifiers.framework */; };
+		CAA909022DBBF3CD004BD1A3 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA908FC2DBBF3A1004BD1A3 /* UniformTypeIdentifiers.framework */; };
 		CEE28CF41AE0051F00F4023C /* GCDWebServers.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE28CF31AE0051F00F4023C /* GCDWebServers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEE28D091AE006C200F4023C /* GCDWebServer2.h in Headers */ = {isa = PBXBuildFile; fileRef = E28BAE1618F99C810095C089 /* GCDWebServer2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEE28D0A1AE006C300F4023C /* GCDWebServer2.h in Headers */ = {isa = PBXBuildFile; fileRef = E28BAE1618F99C810095C089 /* GCDWebServer2.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -283,6 +289,9 @@
 
 /* Begin PBXFileReference section */
 		8DD76FB20486AB0100D96B5E /* GCDWebServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GCDWebServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA908FA2DBBF39B004BD1A3 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS18.2.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = DEVELOPER_DIR; };
+		CAA908FC2DBBF3A1004BD1A3 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		CAA909002DBBF3C8004BD1A3 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = DEVELOPER_DIR; };
 		CEE28CD11AE004D800F4023C /* GCDWebServers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDWebServers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE28CEF1AE0051F00F4023C /* GCDWebServers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDWebServers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE28CF21AE0051F00F4023C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -361,6 +370,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA909022DBBF3CD004BD1A3 /* UniformTypeIdentifiers.framework in Frameworks */,
 				E2BE851118E79DAF0061360B /* SystemConfiguration.framework in Frameworks */,
 				E208D1B3167BB17E00500836 /* CoreServices.framework in Frameworks */,
 				E208D149167B76B700500836 /* CFNetwork.framework in Frameworks */,
@@ -377,6 +387,7 @@
 				CEE28D511AE0098C00F4023C /* CoreServices.framework in Frameworks */,
 				CEE28D501AE0098600F4023C /* SystemConfiguration.framework in Frameworks */,
 				CEE28D4F1AE0097E00F4023C /* CFNetwork.framework in Frameworks */,
+				CAA908FE2DBBF3A6004BD1A3 /* UniformTypeIdentifiers.framework in Frameworks */,
 				E2DDD22B1BE6A0EB002CE867 /* libxml2.tbd in Frameworks */,
 				E2DDD22D1BE6A0EF002CE867 /* libz.tbd in Frameworks */,
 			);
@@ -386,6 +397,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA908FD2DBBF3A1004BD1A3 /* UniformTypeIdentifiers.framework in Frameworks */,
 				CEE28D6A1AE1ABAA00F4023C /* UIKit.framework in Frameworks */,
 				CEE28D571AE00AFE00F4023C /* CoreServices.framework in Frameworks */,
 				CEE28D591AE00AFE00F4023C /* CFNetwork.framework in Frameworks */,
@@ -406,6 +418,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA908FB2DBBF39B004BD1A3 /* UniformTypeIdentifiers.framework in Frameworks */,
 				E2DDD1C01BE69576002CE867 /* UIKit.framework in Frameworks */,
 				E2DDD1BE1BE6956F002CE867 /* CoreServices.framework in Frameworks */,
 				E2DDD1B71BE6951A002CE867 /* CFNetwork.framework in Frameworks */,
@@ -418,6 +431,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA908FF2DBBF3C3004BD1A3 /* UniformTypeIdentifiers.framework in Frameworks */,
 				E24A3C0821E287A300C58878 /* GCDWebServers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +440,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA909012DBBF3C8004BD1A3 /* UniformTypeIdentifiers.framework in Frameworks */,
 				E24A3C0721E2879F00C58878 /* GCDWebServers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +485,9 @@
 		CEE28D081AE0053E00F4023C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CAA908FA2DBBF39B004BD1A3 /* UniformTypeIdentifiers.framework */,
+				CAA908FC2DBBF3A1004BD1A3 /* UniformTypeIdentifiers.framework */,
+				CAA909002DBBF3C8004BD1A3 /* UniformTypeIdentifiers.framework */,
 				E24A3C4021E2940600C58878 /* module.modulemap */,
 				CEE28CF31AE0051F00F4023C /* GCDWebServers.h */,
 				CEE28CF21AE0051F00F4023C /* Info.plist */,
